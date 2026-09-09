@@ -1,4 +1,7 @@
-def create_book_record(title, author, year):
-    return title, author, year
+def swap_tuple(pair):
 
-print(create_book_record('routearner', 'Tega', 1996))
+    first, second = pair
+
+    return second, first
+
+print(swap_tuple((1, 2)))
