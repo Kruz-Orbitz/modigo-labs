@@ -1,9 +1,9 @@
-def has_all_vowels(word):
-    required = {"a", "e", "i", "o", "u"}
-    word = word.lower()
+def count_unique_coordinates(coordinates):
+    unique = []
+    for coord in coordinates:
+        unique.append(coord)
+    correct = set(unique)
+    return len(correct)
 
-    word_set = set(word)
-    return required.issubset(word_set)
-    
-print(has_all_vowels('education'))
-print(has_all_vowels('hello'))
+print(count_unique_coordinates([(0,0), (1,1), (0,0)]))
+print
