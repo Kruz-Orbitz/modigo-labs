@@ -1,10 +1,6 @@
-def count_unique_visitors(visitors):
+def merge_tags(tags1, tags2):
+    merged = tags1 | tags2
+    return merged
 
-    unique = list(set(visitors))
-
-    return len(unique)
-
-print(count_unique_visitors(['Ada', 'Bola', 'Ada']))
-print(count_unique_visitors([]))
-print(count_unique_visitors(['chidi']))
-print(count_unique_visitors(['Ada', 'Ada', 'Ada']))
+print(merge_tags({'python', 'web'}, {'web', 'css'}))
+print(merge_tags (set(), {'a', 'b'}))
