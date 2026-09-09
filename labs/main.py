@@ -1,6 +1,9 @@
-def merge_tags(tags1, tags2):
-    merged = tags1 | tags2
-    return merged
+def has_all_vowels(word):
+    required = {"a", "e", "i", "o", "u"}
+    word = word.lower()
 
-print(merge_tags({'python', 'web'}, {'web', 'css'}))
-print(merge_tags (set(), {'a', 'b'}))
+    word_set = set(word)
+    return required.issubset(word_set)
+    
+print(has_all_vowels('education'))
+print(has_all_vowels('hello'))
