@@ -1,9 +1,4 @@
-def count_unique_coordinates(coordinates):
-    unique = []
-    for coord in coordinates:
-        unique.append(coord)
-    correct = set(unique)
-    return len(correct)
+def create_book_record(title, author, year):
+    return title, author, year
 
-print(count_unique_coordinates([(0,0), (1,1), (0,0)]))
-print
+print(create_book_record('routearner', 'Tega', 1996))
